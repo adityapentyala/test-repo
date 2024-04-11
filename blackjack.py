@@ -1,7 +1,7 @@
 import random
 
-suits = ["Diamonds", "Spades", "Hearts", "Clubs"]
-ranks = ["Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"]
+suits = ["\u2660", "\u2665", "\u2666", "\u2663"]
+ranks = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 ranks_vals = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 class Card:
@@ -9,7 +9,7 @@ class Card:
         self.suit = suit
         self.rank = rank
         self.val = ranks_vals[ranks.index(rank)]
-        self.name = rank+"of"+suit
+        self.name = rank+suit
 
 deck = []
 
