@@ -69,7 +69,7 @@ def main():
                 aceval = input(f"What would you like your {card.name}'s value to be? (1/11): ")
                 while aceval not in ["1", "11"]:
                     aceval = input("Please enter either 1 or 11: ")
-                card.val = aceval
+                card.val = int(aceval)
         
         playerhand_val = evaluate(playerhand)
 
