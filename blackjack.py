@@ -65,7 +65,7 @@ def main():
                 surrendered = True
         
         for card in playerhand:
-            if card.rank == "Ace":
+            if card.rank == "A":
                 aceval = input(f"What would you like your {card.name}'s value to be? (1/11): ")
                 while aceval not in ["1", "11"]:
                     aceval = input("Please enter either 1 or 11: ")
@@ -95,7 +95,7 @@ def main():
             
             for card in dealerhand:
                 dealerhand_val = evaluate(dealerhand)
-                if card.rank == "Ace":
+                if card.rank == "A":
                     if dealerhand_val + 11 - 1 > 21:
                         card.val = 1
                     else:
